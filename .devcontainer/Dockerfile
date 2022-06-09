@@ -17,3 +17,7 @@ RUN sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-
 
 RUN sudo curl -fsSL -o /usr/local/bin/dbmate https://github.com/amacneil/dbmate/releases/latest/download/dbmate-linux-amd64 \
    && sudo chmod +x /usr/local/bin/dbmate
+
+RUN git config --global --unset http.proxy
+
+# RUN cd /workspace || cargo build
