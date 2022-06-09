@@ -10,3 +10,7 @@ axum = "0"
 tokio = { version = "1", default-features = false, features = ["macros", "rt-multi-thread"] }
 sqlx = { version = "0", default-features = false,  features = [ "runtime-tokio-rustls", "postgres", "macros", "chrono" ] }
 markup = "0"
+tower-http = { version = "0", default-features = false, features = ["fs", "trace"] }
+
+[build-dependencies]
+sha1 = "0"  # Use by build.rs for cache busting.

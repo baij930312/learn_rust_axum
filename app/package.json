@@ -1,0 +1,17 @@
+{
+    "name": "app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "parcel": "^2.6.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "parcel watch ./asset-pipeline/index.ts",
+        "release": "parcel build ./asset-pipeline/index.ts"
+    },
+    "author": "",
+    "license": "ISC"
+}

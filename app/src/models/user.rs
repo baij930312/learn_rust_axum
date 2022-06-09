@@ -9,7 +9,8 @@ impl User {
     pub async fn get_users(pool: &PgPool, user_id: u32) -> Result<Vec<User>, Error> {
         Ok(sqlx::query_as!(
             User,
-            "SELECT 
+            "
+                SELECT 
                     id, email
                 FROM 
                     users
