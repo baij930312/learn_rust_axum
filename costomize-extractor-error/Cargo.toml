@@ -1,5 +1,5 @@
 [package]
-name = "chat"
+name = "costomize-extractor-error"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,10 +7,9 @@ edition = "2021"
 
 [dependencies]
 axum = { version = "0" ,features = ["ws"] }
-futures = "0.3"
-hyper = "0.14"
 tokio = { version = "1.0", features = ["full"] }
-tower = { version = "0.4", features = ["util"] }
-tower-http = { version = "0.3", features = ["map-request-body", "util"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+

@@ -2,4 +2,7 @@
 members = [
     "app",
     "chat",
+    "consume-body-in-extractor-or-middleware",
+    "error-handling-and-dependency-injection",
+    "costomize-extractor-error"
 ]
